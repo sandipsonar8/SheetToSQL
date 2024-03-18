@@ -2,19 +2,14 @@ package com.api.sheettosql;
 
 import org.apache.poi.ss.usermodel.*;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.text.NumberFormat;
 import java.util.Iterator;
 
 public class SheetToSQL {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-
+        //Connection
         String jdbcUrl = "jdbc:mysql://localhost:3306/user";
         String username = "root";
         String password = "";
